@@ -103,6 +103,38 @@
 // [”Limit”, “a”, “3”, “33”, “a”, “text”, “strong”, “broun”]
 
 // SOLUTION***************************************************
+// const initialArray = [
+//   5,
+//   "Limit",
+//   12,
+//   "a",
+//   "3",
+//   99,
+//   2,
+//   [2, 4, 3, "33", "a", "text"],
+//   "strong",
+//   "broun",
+// ];
+// function funcName(arr) {
+//   const numElems = [];
+//   const strElems = [];
+
+//   const generalArray = arr.flat();
+
+//   for (let i = 0; i < generalArray.length; i++) {
+//     const elem = generalArray[i];
+//     if (typeof elem === "number") {
+//       numElems.push(elem);
+//     } else {
+//       strElems.push(elem);
+//     }
+//   }
+//   console.log(numElems);
+//   console.log(strElems);
+// }
+// const separeteArrs = funcName(initialArray);
+
+//BAD VERSION
 // function funcName(arr) {
 //   const separeteArrs = {};
 
