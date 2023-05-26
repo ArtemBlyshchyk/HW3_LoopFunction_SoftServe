@@ -185,32 +185,37 @@
 // SOLUTION***************************************************
 // const currentDate = new Date();
 // const currentHour = currentDate.getHours();
-
-// if (currentHour >= 23 && currentHour < 5) {
-//   console.log("Доброї ночі");
-// } else if (currentHour >= 5 && currentHour < 11) {
-//   console.log("Доброго ранку");
-// } else if (currentHour >= 11 && currentHour < 17) {
-//   console.log("Доброго дня");
-// } else {
-//   console.log("Доброго вечора");
-// }
-
-//SECOND VARIANT
-// const currentDate = new Date();
-// const currentHour = currentDate.getHours();
-
-// switch (true) {
-//   case currentHour >= 23 && currentHour < 5:
+// function notification(currentHour) {
+//   if (currentHour >= 23 || currentHour < 5) {
 //     console.log("Доброї ночі");
-//     break;
-//   case currentHour >= 5 && currentHour < 11:
-//     onsole.log("Доброго ранку");
-//     break;
-//   case currentHour >= 11 && currentHour < 17:
+//   } else if (currentHour >= 5 && currentHour < 11) {
+//     console.log("Доброго ранку");
+//   } else if (currentHour >= 11 && currentHour < 17) {
 //     console.log("Доброго дня");
-//     break;
-//   default:
+//   } else {
 //     console.log("Доброго вечора");
-//     break;
+//   }
 // }
+// notification(13);
+
+// SECOND VARIANT
+const currentDate = new Date();
+const currentHour = currentDate.getHours();
+
+function notification(currentHour) {
+  switch (true) {
+    case currentHour >= 23 || currentHour < 5:
+      console.log("Доброї ночі");
+      break;
+    case currentHour >= 5 && currentHour < 11:
+      console.log("Доброго ранку");
+      break;
+    case currentHour >= 11 && currentHour < 17:
+      console.log("Доброго дня");
+      break;
+    default:
+      console.log("Доброго вечора");
+      break;
+  }
+}
+notification(16);
